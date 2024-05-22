@@ -1,0 +1,45 @@
+/* Container for the drawer */
+#drawer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Space between grid items */
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Individual icon/menu item */
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover state for menu items */
+.menu-item:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon within menu item */
+.menu-item .icon {
+    font-size: 36px; /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+/* Text within menu item */
+.menu-item .text {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
