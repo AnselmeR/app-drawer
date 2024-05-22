@@ -1,7 +1,7 @@
 const css = `
 @font-face {
   font-family: 'Poppins';
-  src: url('/src/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  src: url('fonts/Poppins/Poppins-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -41,7 +41,7 @@ const css = `
   border-color: #0691f9;
   &:hover {
     border-color: #0691f9;
-    .icon-multiorder { background-image: url('/src/images/blue_ALLinONE MultiOrder.png'); }
+    .icon-multiorder { background-image: url('images/blue_ALLinONE MultiOrder.png'); }
   }
 }
 
@@ -49,7 +49,7 @@ const css = `
   border-color: #9379ff;
   &:hover {
     border-color: #9379ff;
-    .icon-ccs { background-image: url('/src/images/purple_ALLinONE CCS.png'); }
+    .icon-ccs { background-image: url('images/purple_ALLinONE CCS.png'); }
   }
 }
 
@@ -70,25 +70,25 @@ const css = `
 }
 
 /* Specific icon styles */
-.icon-multiorder { background-image: url('/src/images/Black_ALLinONE MultiOrder.png'); }
-.icon-ccs { background-image: url('/src/images/Black_ALLinONE CCS.png'); }
-.icon-reporting { background-image: url('/src/images/Black_ALLinONE Business Intelligence.png'); }
-.icon-cms { background-image: url('/src/images/Black_cloud hosted.png'); }
-.icon-uc { background-image: url('/src/images/Black_deployment. database.png'); }
-.icon-myaccount { background-image: url('/src/images/Black_ALLinONE MultiOrder.png'); }
-.icon-knowledge-base { background-image: url('/src/images/Black_knowledgeable, brain, information.png'); }
-.icon-ei { background-image: url('/src/images/Black_agility, modular, bespoke.png'); }
-.icon-billing { background-image: url('/src/images/Black_ALLinONE eWarehouse.png'); }
+.icon-multiorder { background-image: url('images/Black_ALLinONE MultiOrder.png'); }
+.icon-ccs { background-image: url('images/Black_ALLinONE CCS.png'); }
+.icon-reporting { background-image: url('images/Black_ALLinONE Business Intelligence.png'); }
+.icon-cms { background-image: url('images/Black_cloud hosted.png'); }
+.icon-uc { background-image: url('images/Black_deployment. database.png'); }
+.icon-myaccount { background-image: url('images/Black_ALLinONE MultiOrder.png'); }
+.icon-knowledge-base { background-image: url('images/Black_knowledgeable, brain, information.png'); }
+.icon-ei { background-image: url('images/Black_agility, modular, bespoke.png'); }
+.icon-billing { background-image: url('images/Black_ALLinONE eWarehouse.png'); }
 
-// .icon-multiorder:hover { background-image: url('/src/images/blue_ALLinONE MultiOrder.png'); }
-// .icon-ccs { background-image: url('/src/images/Black_ALLinONE CCS.png'); }
-// .icon-reporting { background-image: url('/src/images/Black_ALLinONE Business Intelligence.png'); }
-// .icon-cms { background-image: url('/src/images/Black_cloud hosted.png'); }
-// .icon-uc { background-image: url('/src/images/Black_deployment. database.png'); }
-// .icon-myaccount { background-image: url('/src/images/Black_ALLinONE MultiOrder.png'); }
-// .icon-knowledge-base { background-image: url('/src/images/Black_knowledgeable, brain, information.png'); }
-// .icon-ei { background-image: url('/src/images/Black_agility, modular, bespoke.png'); }
-// .icon-billing { background-image: url('/src/images/Black_ALLinONE eWarehouse.png'); }
+// .icon-multiorder:hover { background-image: url('images/blue_ALLinONE MultiOrder.png'); }
+// .icon-ccs { background-image: url('images/Black_ALLinONE CCS.png'); }
+// .icon-reporting { background-image: url('images/Black_ALLinONE Business Intelligence.png'); }
+// .icon-cms { background-image: url('images/Black_cloud hosted.png'); }
+// .icon-uc { background-image: url('images/Black_deployment. database.png'); }
+// .icon-myaccount { background-image: url('images/Black_ALLinONE MultiOrder.png'); }
+// .icon-knowledge-base { background-image: url('images/Black_knowledgeable, brain, information.png'); }
+// .icon-ei { background-image: url('images/Black_agility, modular, bespoke.png'); }
+// .icon-billing { background-image: url('images/Black_ALLinONE eWarehouse.png'); }
 
 /* Text within menu item */
 .menu-item .text {
