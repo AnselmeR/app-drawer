@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Apply the Poppins font to the component */
+#drawer, .menu-item, .menu-item .text {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Container for the drawer */
 #drawer {
     display: grid;
@@ -16,12 +28,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 0 5px 5px 5px;
     background-color: #f9f9f9;
     border: 2px solid #ccc;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item.multiorder {
+    border-color: #0691f9;
+    &:hover {
+        border-color: #0691f9;
+        .icon-multiorder { background-image: url('../images/blue_ALLinONE_MultiOrder.png'); }
+    }
+}
+
+.menu-item.ccs {
+    border-color: #9379ff;
+    &:hover {
+        border-color: #9379ff;
+        .icon-ccs { background-image: url('../images/purple_ALLinONE_CCS.png'); }
+    }
 }
 
 /* Hover state for menu items */
@@ -33,13 +61,31 @@
 
 /* Icon within menu item */
 .menu-item .icon {
-    font-size: 36px; /* Adjust font size as needed */
-    margin-bottom: 10px;
+    width: 64px; /* Adjust width as needed */
+    height: 64px; /* Adjust height as needed */
+    /*margin-bottom: 10px;*/
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
+/* Specific icon styles */
+.icon-multiorder { background-image: url('../images/Black_ALLinONE_MultiOrder.png'); }
+.icon-ccs { background-image: url('../images/Black_ALLinONE_CCS.png'); }
+.icon-reporting { background-image: url('../images/Black_ALLinONE_Business_Intelligence.png'); }
+.icon-cms { background-image: url('../images/Black_cloud_hosted.png'); }
+.icon-uc { background-image: url('../images/Black_deployment_database.png'); }
+.icon-myaccount { background-image: url('../images/Black_ALLinONE_MultiOrder.png'); }
+.icon-knowledge-base { background-image: url('../images/Black_knowledgeable_brain_information.png'); }
+.icon-ei { background-image: url('../images/Black_agility_modular_bespoke.png'); }
+.icon-billing { background-image: url('../images/Black_ALLinONE_eWarehouse.png'); }
 
 /* Text within menu item */
 .menu-item .text {
-    font-size: 14px;
+    font-size: 12px;
     color: #333;
     text-align: center;
+}
+
+.menu-item .text-knowledge-base {
+    font-size: 9px;
 }
