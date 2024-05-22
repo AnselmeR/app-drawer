@@ -28,6 +28,7 @@
     left: var(--drawer-left, 0); /* Use CSS variable for left position */
     right: var(--drawer-right, auto); /* Use CSS variable for right position */
     bottom: var(--drawer-bottom, auto); /* Use CSS variable for bottom position */
+    z-index: 9999;
 }
 
 /* Individual icon/menu item */
