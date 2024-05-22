@@ -12,14 +12,22 @@
 
 /* Container for the drawer */
 #drawer {
+    &.hidden {
+        display: none;
+    }
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 10px; /* Space between grid items */
-    width: 100%;
+    width: 250px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    position: var(--drawer-position, absolute); /* Use CSS variable for position */
+    top: var(--drawer-top, 0); /* Use CSS variable for top position */
+    left: var(--drawer-left, 0); /* Use CSS variable for left position */
+    right: var(--drawer-right, auto); /* Use CSS variable for right position */
+    bottom: var(--drawer-bottom, auto); /* Use CSS variable for bottom position */
 }
 
 /* Individual icon/menu item */

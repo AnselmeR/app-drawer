@@ -1,6 +1,8 @@
 import css from "../styles/app-drawer.css" ;
 
 class AppDrawer extends HTMLElement {
+    private trigger: HTMLElement | null = null;
+
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
@@ -8,6 +10,20 @@ class AppDrawer extends HTMLElement {
 
     connectedCallback() {
         this.render();
+
+        const triggerSelector = this.getAttribute('trigger');
+        if (triggerSelector) {
+            this.trigger = document.querySelector(triggerSelector);
+            if (this.trigger) {
+                this.trigger.addEventListener('click', this.toggleDrawer.bind(this));
+            }
+        }
+    }
+
+    disconnectedCallback() {
+        if (this.trigger) {
+            this.trigger.removeEventListener('click', this.toggleDrawer.bind(this));
+        }
     }
 
     render() {
@@ -66,6 +82,26 @@ class AppDrawer extends HTMLElement {
                 console.log((item.querySelector('.text') as HTMLElement).textContent + ' clicked');
             });
         });
+    }
+    toggleDrawer() {
+        const drawer = this.shadowRoot!.querySelector('#drawer');
+        if (drawer) {
+            drawer.classList.toggle('hidden');
+        }
+    }
+
+    show() {
+        const drawer = this.shadowRoot!.querySelector('#drawer');
+        if (drawer) {
+            drawer.classList.remove('hidden');
+        }
+    }
+
+    hide() {
+        const drawer = this.shadowRoot!.querySelector('#drawer');
+        if (drawer) {
+            drawer.classList.add('hidden');
+        }
     }
 }
 
