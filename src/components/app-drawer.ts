@@ -32,7 +32,7 @@ class AppDrawer extends HTMLElement {
         style.textContent = css.toString();
 
         const template = `
-          <div id="drawer">
+          <div id="drawer" class="hidden">
             <div class="menu-item multiorder">
               <div class="icon icon-multiorder"></div>
               <span class="text">MultiOrder</span>
