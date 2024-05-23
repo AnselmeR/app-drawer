@@ -41,34 +41,34 @@ class AppDrawer extends HTMLElement {
               <div class="icon icon-ccs"></div>
               <span class="text">CCS</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item reporting">
               <div class="icon icon-reporting"></div>
               <span class="text">Reporting</span>
             </div>
-            <div class="menu-item">
-              <div class="icon icon-cms"></div>
-              <span class="text">CMS</span>
-            </div>
-            <div class="menu-item">
+            <div class="menu-item billing">
+              <div class="icon icon-billing"></div>
+              <span class="text">Billing</span>
+            </div>           
+            <a href="http://localhost:4200/unifiedcatalogue/home" target="_blank" class="menu-item uc">
               <div class="icon icon-uc"></div>
               <span class="text">UC</span>
-            </div>
-            <div class="menu-item">
+            </a>
+            <a href="http://localhost:4200/eventintelligence/home" target="_blank" class="menu-item ei">
+              <div class="icon icon-ei"></div>
+              <span class="text">EI</span>
+            </a>           
+            <a href="http://localhost:9001/rpp/mvno/home" target="_blank" class="menu-item partner-portal">
+              <div class="icon icon-partner-portal"></div>
+              <span class="text text-partner-portal">Partner Portal</span>
+            </a>
+            <div class="menu-item myaccount">
               <div class="icon icon-myaccount"></div>
               <span class="text">MyAccount</span>
             </div>
-            <div class="menu-item">
-              <div class="icon icon-knowledge-base"></div>
-              <span class="text text-knowledge-base">Knowledge Base</span>
-            </div>
-            <div class="menu-item">
-              <div class="icon icon-ei"></div>
-              <span class="text">EI</span>
-            </div>
-            <div class="menu-item">
-              <div class="icon icon-billing"></div>
-              <span class="text">Billing</span>
-            </div>
+            <div class="menu-item cms">
+              <div class="icon icon-cms"></div>
+              <span class="text">CMS</span>
+            </div>            
           </div>
         `;
 
